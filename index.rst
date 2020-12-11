@@ -44,6 +44,7 @@
   calm_projects/calm_projects
   calm_linux/calm_linux
   calm_win/calm_win
+  calm_single/calm_single
 
 .. toctree::
   :maxdepth: 2
