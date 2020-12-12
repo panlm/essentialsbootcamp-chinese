@@ -241,17 +241,14 @@ Calm: 单虚拟机蓝图的创建
 - 选择刚才运行的应用
 
   .. figure:: images/up1.png
-      :width: 70 %
 
 - 选择右上角 **Update** --> **Update VM Configuration**
 - 修改CPU数量 **2** --> **4**
 - 修改内存数量 **4** --> **8**
 
   .. figure:: images/up2.png
-      :width: 70 %
 
   .. figure:: images/up3.png
-      :width: 70 %
 
   .. note:: 缩小配置会导致虚拟机关机并重启
 
@@ -263,36 +260,29 @@ Calm: 单虚拟机蓝图的创建
 - 选择右上角 **Update** --> **Update Actions & Credentials**
 
   .. figure:: images/act1.png
-      :width: 70 %
 
 - 选择 **+Add action**
 - 在左上角给Action命名，比如 **My Action1**
 
   .. figure:: images/act2.png
-      :width: 70 %
 
 - 选择Task，并输入具体需要执行的Task内容，如下图
 
   .. figure:: images/act3.png
-      :width: 70 %
 
 - 完成后选择 **Done** ， 并再次确认修改，选择 **Confirm**
 
   .. figure:: images/act4.png
-      :width: 70 %
 
 - 新Action已经创建，选择 **Update** ， 保存修改
 
   .. figure:: images/act5.png
-      :width: 70 %
 
 - 从应用页面中查看Action已经被创建，并执行
 
   .. figure:: images/act6.png
-      :width: 70 %
 
   .. figure:: images/act7.png
-      :width: 70 %
 
 
 
