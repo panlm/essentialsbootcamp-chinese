@@ -30,6 +30,8 @@ Calm: 单虚拟机蓝图的创建
 
 #. 选择 **创建蓝图** --> **单个虚拟机蓝图**
 
+    .. figure:: images/s0.png
+
 #. 第1步
 
     - **Name** - 输入蓝图名称
@@ -175,7 +177,7 @@ Calm: 单虚拟机蓝图的创建
 
 #. 第5步
 
-    上面脚本中我们使用了两个自定义变量: DB_PASSWORD 和 BACKUP_FILE_PATH。接下来我们对这两个变量进行初始化配置。点击页面右上方**App Variables**。添加第一个变量 DB_PASSWORD
+    上面脚本中我们使用了两个自定义变量: DB_PASSWORD 和 BACKUP_FILE_PATH。接下来我们对这两个变量进行初始化配置。点击页面右上方 **App Variables** 。添加第一个变量 DB_PASSWORD
 
     - **Name** - 变量名称为 **DB_PASSWORD**
     - **Data Type** - 选择变量类型为 **String**
@@ -193,29 +195,28 @@ Calm: 单虚拟机蓝图的创建
     .. figure:: images/52.png
 
     - **Done** - 点击完成，返回蓝图窗口
+    - 点击 **Save** 保存蓝图
 
-    点击**Save** 保存蓝图
-
-运行蓝图
+运行应用
 ++++++++
 
-#. 保存蓝图后，选择右上角 **Launch** 运行蓝图
+#. 保存蓝图后，选择右上角 **Launch** 运行应用
 
     .. figure:: images/61.png
-        :width: 50 %
 
     - **Name of the Application** - 输入应用名称
-    - **Create** - 运行蓝图
+    - **Create** - 运行应用
 
     .. figure:: images/62.png
+        :width: 70 %
 
-#. application页面中可以从 **Overview** 页面查看基本信息，从 **Audit** 页面查看蓝图创建详细过程
+#. 可以从 **Overview** 页面查看基本信息，从 **Audit** 页面查看应用创建详细过程
 
     .. figure:: images/63.png
 
     .. figure:: images/64.png
 
-#. application成功运行之后，可以从 **Metric** 页面查看资源的详细信息 
+#. 应用成功运行之后，可以从 **Metric** 页面查看资源的详细信息 
 
     .. figure:: images/65.png
 
@@ -224,12 +225,74 @@ Calm: 单虚拟机蓝图的创建
     .. figure:: images/66.png
 
     .. figure:: images/67.png
-        :width: 70 %
 
     同样可以在 **Audit** 页面中查看详细的运行过程
 
     .. figure:: images/68.png
 
+
+其他应用操作
+++++++++++++
+
+修改资源
+........
+
+- 进入 **App** 页面
+- 选择刚才运行的应用
+
+  .. figure:: images/up1.png
+      :width: 70 %
+
+- 选择右上角 **Update** --> **Update VM Configuration**
+- 修改CPU数量 **2** --> **4**
+- 修改内存数量 **4** --> **8**
+
+  .. figure:: images/up2.png
+      :width: 70 %
+
+  .. figure:: images/up3.png
+      :width: 70 %
+
+  .. note:: 缩小配置会导致虚拟机关机并重启
+
+修改Action
+..........
+
+- 进入 **App** 页面
+- 选择刚才运行的应用
+- 选择右上角 **Update** --> **Update Actions & Credentials**
+
+  .. figure:: images/act1.png
+      :width: 70 %
+
+- 选择 **+Add action**
+- 在左上角给Action命名，比如 **My Action1**
+
+  .. figure:: images/act2.png
+      :width: 70 %
+
+- 选择Task，并输入具体需要执行的Task内容，如下图
+
+  .. figure:: images/act3.png
+      :width: 70 %
+
+- 完成后选择 **Done** ， 并再次确认修改，选择 **Confirm**
+
+  .. figure:: images/act4.png
+      :width: 70 %
+
+- 新Action已经创建，选择 **Update** ， 保存修改
+
+  .. figure:: images/act5.png
+      :width: 70 %
+
+- 从应用页面中查看Action已经被创建，并执行
+
+  .. figure:: images/act6.png
+      :width: 70 %
+
+  .. figure:: images/act7.png
+      :width: 70 %
 
 
 
